@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --Light-Green: #ffffff;
+    --Green: #2d6a4f;
+    --Dark-Green: #1b4332;
+    --Darker-Green: #10111A;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: roboto;
+}
+
+body {
+    background-color: var(--Darker-Green);
+    margin: 0px;
+}
+
+.navbar {
+    background-color: var(--Light-Green);
+    list-style: none;
+    display: flex;
+    margin: 0px;
+}
+
+.navbar li{
+    margin: 14px 0px 14px 0px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--Darker-Green);
+    padding: 14px 16px;
+}
+
+.navbar a:hover {
+    color: var(--Light-Green);
+    background-color: var(--Darker-Green);
+    transition-timing-function: linear;
+    transition-duration: 100ms;
+}
+
+#selected{
+    color: var(--Light-Green);
+    background-color: var(--Darker-Green);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    min-height: 80vh;
+    margin: 3%;
+} 
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 80vh;
+    margin: 3%;
+}
+
+main h1 {
+    color: var(--Light-Green);
+    text-align: center;
+    font-size: 10vh;
+    margin: 5px;
+    font-weight: 500;
+}
+
+main h2 {
+    color: var(--Light-Green);
+    text-align: center;
+    font-size: 3vh;
+    margin: 5px;
+    font-weight: 100;
+}
+
+main h3 {
+    color: var(--Light-Green);
+    text-align: left;
+    font-size: 10vh;
+    margin: 5px;
+    font-weight: 500;
+}
+
+main h4 {
+    color: var(--Light-Green);
+    text-align: left;
+    font-size: 3vh;
+    margin: 5px;
+    font-weight: 300;
+}
+
+Textos {
+    display: flex;
+    flex-direction: column;
+}
+
+main a {
+    text-decoration: none;
+    border-style: none;
+}
+
+.buttons {
+    display: flex;
+}
+
+.buttons a {
+    padding: 0%;
+    margin: 0px;
+    border-radius: 0px;
+}
+
+.contact {
+    color: var(--Light-Green);
+    border-color: var(--Light-Green);
+}
+
+.contact:hover {
+    color: var(--Darker-Green);
+    background-color: var(--Light-Green);
+    transition-timing-function: linear;
+    transition-duration: 100ms;
+}
+
+.products {
+    border-color: var(--Dark-Green);
+    background-color: var(--Dark-Green);
+    color: var(--Light-Green);
+}
+
+.products:hover {
+    background-color: var(--Light-Green);
+    color: var(--Dark-Green);
+    border-color: var(--Light-Green);
+    transition-timing-function: linear;
+    transition-duration: 100ms;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+img.img1{
+    max-width: 100%;
+    max-height: 100%;
+    height: 40px;
+    width: 40px;
+    margin-top: 4px;
+    margin-right: 10px;
+}
+
+img.img2{
+    height: 100%;
+    width: 100%;
+    margin: 1%;
+    margin-left: 0%;
+}

@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
-    --Light-Green: #ffffff;
-    --Darker-Green: #10111A;
+    --White: #ffffff;
+    --Black: #10111a;
 }
 
 * {
@@ -11,12 +11,12 @@
 }
 
 body {
-    background-color: var(--Darker-Green);
+    background-color: var(--Black);
     margin: 0px;
 }
 
 .navbar {
-    background-color: var(--Light-Green);
+    background-color: var(--White);
     list-style: none;
     display: flex;
     margin: 0px;
@@ -28,20 +28,20 @@ body {
 
 .navbar a {
     text-decoration: none;
-    color: var(--Darker-Green);
+    color: var(--Black);
     padding: 14px 16px;
 }
 
 .navbar a:hover {
-    color: var(--Light-Green);
-    background-color: var(--Darker-Green);
+    color: var(--White);
+    background-color: var(--Black);
     transition-timing-function: linear;
     transition-duration: 100ms;
 }
 
 #selected{
-    color: var(--Light-Green);
-    background-color: var(--Darker-Green);
+    color: var(--White);
+    background-color: var(--Black);
 }
 
 main {
@@ -71,12 +71,27 @@ main {
     margin-inline: 100px;
 }
 
+.centerside img {
+    opacity: 50%;   
+}
+
+.centerside img:hover {
+    cursor: pointer;
+    opacity: 100%;
+    transition-timing-function: linear;
+    transition-duration: 100ms;
+}
+
+.centerside img:active {
+    opacity: 50%;
+}
+
 .centerside a{
     margin-inline: 100px;
 }
 
 main h1 {
-    color: var(--Light-Green);
+    color: var(--White);
     text-align: center;
     font-size: 10vh;
     margin: 5px;
@@ -84,7 +99,7 @@ main h1 {
 }
 
 main h2 {
-    color: var(--Light-Green);
+    color: var(--White);
     text-align: center;
     font-size: 3vh;
     margin: 5px;
@@ -92,7 +107,7 @@ main h2 {
 }
 
 main h3 {
-    color: var(--Light-Green);
+    color: var(--White);
     text-align: left;
     font-size: 10vh;
     margin: 5px;
@@ -100,7 +115,7 @@ main h3 {
 }
 
 main h4 {
-    color: var(--Light-Green);
+    color: var(--White);
     text-align: left;
     font-size: 3vh;
     margin: 5px;
@@ -134,13 +149,13 @@ main a {
 }
 
 .contact {
-    color: var(--Light-Green);
-    border-color: var(--Light-Green);
+    color: var(--White);
+    border-color: var(--White);
 }
 
 .contact:hover {
-    color: var(--Darker-Green);
-    background-color: var(--Light-Green);
+    color: var(--Black);
+    background-color: var(--White);
     transition-timing-function: linear;
     transition-duration: 100ms;
 }
@@ -148,20 +163,25 @@ main a {
 .products {
     border-color: var(--Dark-Green);
     background-color: var(--Dark-Green);
-    color: var(--Light-Green);
+    color: var(--White);
 }
 
 .products:hover {
-    background-color: var(--Light-Green);
+    background-color: var(--White);
     color: var(--Dark-Green);
-    border-color: var(--Light-Green);
+    border-color: var(--White);
     transition-timing-function: linear;
     transition-duration: 100ms;
-
 }
 
-div {
-    
+.words span {
+    color: #10111A;
+}
+
+.words span :hover {
+    color: white;
+    transition-timing-function: linear;
+    transition-duration: 100ms;
 }
 
 img.img1{

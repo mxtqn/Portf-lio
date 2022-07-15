@@ -90,6 +90,17 @@ main {
     margin-inline: 100px;
 }
 
+.lateral {
+    display: flex;
+}
+
+.lateral img {
+    width: 350px;
+    height: 900px;
+    object-fit: cover;
+    object-position: 0% 0%;
+}
+
 main h1 {
     color: var(--White);
     text-align: center;

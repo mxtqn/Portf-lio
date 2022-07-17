@@ -200,6 +200,7 @@ main a {
 
 .words span {
     color: #10111A;
+    cursor:default;
 }
 
 .words span :hover {

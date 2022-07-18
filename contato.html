@@ -46,7 +46,17 @@
             <h3> anacarolinass.cc@gmail.com</h3>
         </span>
     </footer>
-    
+    <div class="cursoranima">
+        <script>
+            var bolinha = document.querySelector('.cursoranima');
+            document.addEventListener('mousemove', function(m){
+                let xPos = m.pageX - 15;
+                let yPos = m.pageY - 15;
+                bolinha.style.left = xPos + 'px';
+                bolinha.style.top = yPos + 'px';
+                console.log(m.pageX, m.pageY)
+            });
+        </script>
     </body>
 
 

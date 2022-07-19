@@ -6,13 +6,129 @@
 }
 
 * {
+    padding: 0%;
     box-sizing: border-box;
     font-family: roboto;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden; 
 }
 
 body {
     background-color: var(--Black);
     margin: 0px;
+    padding: 0%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+section .set {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0%;
+    left: 0%;
+    pointer-events: none;
+}
+
+section .set div {
+    position: absolute;
+    display: block;
+}
+
+section .set div:nth-child(1){
+    left: 20%;
+    animation: animate 8s linear infinite;
+    animation-delay: -7s;
+}
+
+section .set div:nth-child(2){
+    left: 50%;
+    animation: animate 8s linear infinite;
+    animation-delay: -5s;
+}
+
+section .set div:nth-child(3){
+    left: 70%;
+    animation: animate 8s linear infinite;
+    animation-delay: 0s;
+}
+
+section .set div:nth-child(4){
+    left: 0%;
+    animation: animate 8s linear infinite;
+    animation-delay: -6s;
+}
+
+section .set div:nth-child(5){
+    left: 85%;
+    animation: animate 8s linear infinite;
+    animation-delay: -10s;
+}
+
+section .set div:nth-child(6){
+    left: 0%;
+    animation: animate 8s linear infinite;
+}
+
+section .set div:nth-child(7){
+    left: 15%;
+    animation: animate 8s linear infinite;
+    animation-delay: -10s;
+}
+
+section .set div:nth-child(8){
+    left: 60%;
+    animation: animate 8s linear infinite;
+}
+
+section .set div:nth-child(8){
+    left: 30%;
+    animation: animate 8s linear infinite;
+    animation-delay: 9s;
+}
+
+section .set div:nth-child(9){
+    left: 0%;
+    animation: animate 8s linear infinite;
+    animation-delay: 10s;
+}
+
+section .set div:nth-child(10){
+    left: 15%;
+    animation: animate 8s linear infinite;
+}
+
+@keyframes animate {
+    0%
+    {
+        opacity: 0;
+        top: -10%;
+        transform: translateX(20px) rotate(0deg);
+    }
+    10%{
+        opacity: 1;
+    }
+    20%{
+        transform: translateX(-20px) rotate(45deg);
+    }
+    40%{
+        transform: translateX(-5px) rotate(90deg);
+    }
+    60%{
+        transform: translateX(20px) rotate(180deg);
+    }
+    80%{
+        transform: translateX(-20px) rotate(180deg);
+    }
+    100%{
+        top: 110%;
+        transform: translateX(-20px) rotate(225deg);
+    }
 }
 
 .navbar {
@@ -223,8 +339,8 @@ main a {
 }
 
 .cursoranima {
-    width: 15px;
-    height: 15px;
+    width: 10px;
+    height: 10px;
     display: block;
     border-radius: 50%;
     position: absolute;
@@ -238,7 +354,9 @@ img.img1{
     max-height: 100%;
     height: 40px;
     width: 40px;
-    margin-top: 4px;
+    padding: 5px;
+    margin-top: 3px;
+    margin-left: 10px;
     margin-right: 10px;
 }
 
@@ -249,12 +367,12 @@ img.img2{
     width: 170px;
     padding: 5px;
 }
-/* 
-.imagens {
-    width: 40px;
-    height: 40px;
-    background-color: rgba(255, 255, 255, 0.466);
+
+.ferramentas {
+    opacity: 10%;
+    width: 50px;
+    height: 50px;
     display: block;
     position: absolute;
     bottom:0px;
-} */
+} 

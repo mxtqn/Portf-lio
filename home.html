@@ -12,7 +12,7 @@
 
 <body>
     <ul class="navbar">
-        <img class="img1" src="static/img/iconflat.png" />
+        <img class="img1" src="static/img/Icon.png" />
         <li><a id="selected" href="./home.html">Home</a></li>
         <li><a href="./projetos.html">Projetos</a></li>
         <li><a href="./habilidades.html">Habilidades</a></li>
@@ -20,22 +20,33 @@
         <li><a href="./contato.html">Contato</a></li>
     </ul>
 </div>
-<main class="center">
-    <h1>Seja bem-vinde!</h1>
-    <h2>Meu nome é <span style="font-weight: 400;">Ana</span>, sou estudante de <span style="font-weight: 400;">Ciência da Computação</span> <br>
-        no IFG Campus Anápolis e estagiária na TI do <span style="font-weight: 400;">Café Rancheiro</span>. <br>
-        Essa é uma oportunidade para me conhecer melhor :)</h2>
-    </main><!-- 
+<section>
+    <div class="set"> 
+        <main class="center">
+            <h1>Seja bem-vinde!</h1>
+            <h2>Meu nome é <span style="font-weight: 400;">Ana</span>, sou estudante de <span style="font-weight: 400;">Ciência da Computação</span> <br>
+            no IFG Campus Anápolis e estagiária na TI do <span style="font-weight: 400;">Café Rancheiro</span>. <br>
+            Essa é uma oportunidade para me conhecer melhor :)</h2>
+        </main> 
+        <div><img class="ferramentas" src="static/ferramentas/python.png" alt=""></div>
+        <div><img class="ferramentas" src="static/ferramentas/arduino.png" alt=""></div>
+        <div><img class="ferramentas" src="static/ferramentas/raspberry.png" alt=""></div>
+        <div><img class="ferramentas" src="static/ferramentas/html.png" alt=""></div>
+        <div><img class="ferramentas" src="static/ferramentas/css.png" alt=""></div>
+        <div><img class="ferramentas" src="static/ferramentas/postgreesql.png" alt=""></div>
+    </div>
+</section>
+<!-- 
     <ul class="imagens">
-
-    </ul> -->
-    <div class="cursoranima">
-    <script>
-        var bolinha = document.querySelector('.cursoranima');
-        document.addEventListener('mousemove', function(m){
-            let xPos = m.pageX - 15;
-            let yPos = m.pageY - 15;
-            bolinha.style.left = xPos + 'px';
+            
+        </ul> -->
+        <div class="cursoranima">
+            <script>
+                var bolinha = document.querySelector('.cursoranima');
+                document.addEventListener('mousemove', function(m){
+                    let xPos = m.pageX - 15;
+                    let yPos = m.pageY - 15;
+                    bolinha.style.left = xPos + 'px';
             bolinha.style.top = yPos + 'px';
             console.log(m.pageX, m.pageY)
         });/* 
@@ -46,6 +57,7 @@
             ulimagens.appendChild(li)
         } */
     </script>
+    
 </body>
 
 
